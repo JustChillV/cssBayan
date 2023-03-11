@@ -1,9 +1,23 @@
 body {
     background-color: blanchedalmond;
+    font-weight: bold;
+
 };
 header{
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
 }
-.imag{
-    border-bottom: 3px lightgray;
+h1{
+    text-align: center;
+}
+.open_icon{
+    text-align: right;
+}
+.main-pic{
+    text-align: center;
+}
+.checkbox-card:checked + .card_main{
+    visibility: visible;
+    width: 40%;
+    height: 40%;
+    opacity: 1;
 }
