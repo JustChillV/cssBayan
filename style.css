@@ -1,27 +1,63 @@
 body {
-    background-color: blanchedalmond;
+    background-color: rgb(245, 228, 204);
     font-weight: bold;
 
-};
-header{
-    border-bottom: 3px solid black;
 }
 h1{
     text-align: center;
 }
+.first{
+    display: block;
+}
+.memes{
+    max-width: 500px;
+    margin: 20px auto;
+    color: blue;
+}
+.memes:hover{
+    color: black;
+}
+.memeinp{
+    appearance: none;
+}
 .open_icon{
-    right: 20%;
-    width: 10%;
-    height: 10%;
+    max-width: 10px;
+    max-height: 10px;
+}
 
+.memeinp:hover ~ .memeimg{
+    display: block;
+}
+.memeinp:checked ~ .memeimg{
+    display: block;
+}
+.memeinp:checked ~ .memes-title{
+    color: black;
+}
+.memeinp:checked ~ label .memes-title_image{
+    transform: rotate(45deg);
+    color: black;
+}
+.memes-title{
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.memes-title:hover{
+    background-color: rgb(246, 185, 93);
+}
+.memeimg{
+    padding: 10px 15px;
+    display: none;
+}
+.memes-title_image{
+    display:  inline-block;
+}
+.push {
+    display:  inline-block;
+    inline-size: 90%;
 }
 .main-pic{
-    width:30%;
-    height:30%;
-}
-.checkbox-card:checked + .card_main{
-    visibility: visible;
-    width: 40%;
-    height: 40%;
-    opacity: 1;
+    width: 80%;
+    height: 80%;
 }
