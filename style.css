@@ -10,10 +10,14 @@ h1{
     text-align: center;
 }
 .open_icon{
-    text-align: right;
+    right: 20%;
+    width: 10%;
+    height: 10%;
+
 }
 .main-pic{
-    text-align: center;
+    width:30%;
+    height:30%;
 }
 .checkbox-card:checked + .card_main{
     visibility: visible;
